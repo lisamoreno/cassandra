@@ -43,6 +43,7 @@ if [ "$1" = 'cassandra' ]; then
 		num_tokens \
 		rpc_address \
 		start_rpc \
+		commitlog_segment_size_in_mb \
 	; do
 		var="CASSANDRA_${yaml^^}"
 		val="${!var}"
